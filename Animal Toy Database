@@ -1,0 +1,9 @@
+CREATE TABLE animaltoys (ID INTEGER PRIMARY KEY, type TEXT, number INTEGER, price NUMERIC, animal TEXT, sold INTEGER);
+
+INSERT INTO animaltoys VALUES (1, "rope", 10, 5, "dog", 5);
+INSERT INTO animaltoys VALUES (2, "ball", 15, 3, "dog", 5);
+INSERT INTO animaltoys VALUES (3, "mouse", 20, 2, "cat", 10);
+
+SELECT * FROM animaltoys ORDER BY price;
+
+Check out my store database. I descibed a few different toys. 
