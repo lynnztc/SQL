@@ -1,0 +1,17 @@
+SELECT * FROM superbowls;
+SELECT winner FROM superbowls WHERE Winner_Pts > 35;
+SELECT AVG(Winner_Pts) FROM superbowls;
+SELECT SB, Winner FROM superbowls
+    GROUP BY Winner
+    HAVING Winner_Pts > 25;
+SELECT SB, Winner, Winner Pts,
+    CASE 
+        WHEN Winner_Pts > 50 THEN "Big Win"
+        WHEN Winner_Pts > 40 THEN "Average Win"
+        WHEN Winner_Pts > 30 THEN "Small Win"
+        ELSE "No Win"
+    END as "Winners"
+FROM superbowls;
+SELECT SB FROM superbowls WHERE Winner_Pts > 35 AND Loser_Pts < 21;
+
+This is my superbowl results database. I showed the average winning points in a game and grouping the winner having over 25 points.
